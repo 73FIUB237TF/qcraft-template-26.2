@@ -2,6 +2,7 @@
   "itemGroup.qcraft": "Example Mod Tab",
   "block.qcraft.example_block": "Example Block",
   "item.qcraft.example_item": "Example Item",
+  "item.qcraft.purple_heart": "Purple Heart",
 
   "qcraft.configuration.title": "Qcraft Configs",
   "qcraft.configuration.section.qcraft.common.toml": "Qcraft Configs",

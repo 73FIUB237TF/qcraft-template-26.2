@@ -54,6 +54,11 @@ public class Qcraft {
     public static final DeferredItem<Item> EXAMPLE_ITEM = ITEMS.registerSimpleItem("example_item", p -> p.food(new FoodProperties.Builder()
             .alwaysEdible().nutrition(1).saturationModifier(2f).build()));
 
+    // Creates the Purple Heart item that can be consumed with RMB
+    public static final DeferredItem<PurpleHeartItem> PURPLE_HEART = ITEMS.register("purple_heart", 
+            () -> new PurpleHeartItem(new Item.Properties().food(new FoodProperties.Builder()
+                    .alwaysEdible().nutrition(0).saturationModifier(0f).build())));
+
     // Creates a creative tab with the id "qcraft:example_tab" for the example item, that is placed after the combat tab
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.qcraft")) //The language key for the title of your CreativeModeTab
@@ -61,6 +66,7 @@ public class Qcraft {
             .icon(() -> EXAMPLE_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(EXAMPLE_ITEM.get());// Add the example item to the tab. For your own tabs, this method is preferred over the event
+                output.accept(PURPLE_HEART.get()); // Add the purple heart item to the tab
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
