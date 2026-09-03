@@ -1,0 +1,13 @@
+{
+  "itemGroup.qcraft": "Example Mod Tab",
+  "block.qcraft.example_block": "Example Block",
+  "item.qcraft.example_item": "Example Item",
+
+  "qcraft.configuration.title": "Qcraft Configs",
+  "qcraft.configuration.section.qcraft.common.toml": "Qcraft Configs",
+  "qcraft.configuration.section.qcraft.common.toml.title": "Qcraft Configs",
+  "qcraft.configuration.items": "Item List",
+  "qcraft.configuration.logDirtBlock": "Log Dirt Block",
+  "qcraft.configuration.magicNumberIntroduction": "Magic Number Text",
+  "qcraft.configuration.magicNumber": "Magic Number"
+}
